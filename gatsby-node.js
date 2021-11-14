@@ -58,9 +58,9 @@ exports.createPages = async ({ graphql, actions }) => {
 }
 
 // Allow client-only routes on /admin/*
-exports.onCreatePage = async ({ page, actions }) => {
-  if (page.path.match(/^\/admin/)) {
-    page.matchPath = "/admin/*"
-    actions.createPage(page)
-  }
-}
+// exports.onCreatePage = async ({ page, actions }) => {
+//   if (page.path.match(/^\/admin/)) {
+//     page.matchPath = "/admin/*"
+//     actions.createPage(page)
+//   }
+// }
